@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body{height: 400vh;}
-header{width: 100vw; height: 100vh;background: #feae1b;position: relative;}
+header{width: 100vw; height: 100vh;background: #feae1b;position: relative;overflow: hidden;}
 
 .layer{
     width: 100vw;height: 100vh;
@@ -10,33 +10,40 @@ header{width: 100vw; height: 100vh;background: #feae1b;position: relative;}
     background-size: auto 1000px;
     position: absolute;
     transition: 0.3s;
+    transform-origin: center;
 }
-.pic0{
+.layer.pic0{
     background-image: url(../images/parallax0.png);
 }
-.pic1{
+.layer.pic1{
     background-image: url(../images/parallax1.png);
+    transform: translateY(50);
 }
-.pic2{
+.layer.pic2{
     background-image: url(../images/parallax2.png);
 }
-.pic3{
+.layer.pic3{
     background-image: url(../images/parallax3.png);
 }
-.pic4{
+.layer.pic4{
     background-image: url(../images/parallax4.png);
 }
-.pic5{
+.layer.pic5{
     background-image: url(../images/parallax5.png);
 }
-.pic6{
+.layer.pic6{
     background-image: url(../images/parallax6.png);
 }
-.pic7{
+.layer.pic7{
     background-image: url(../images/parallax7.png);
 }
-.pic8{
+.layer.pic8{
     background-image: url(../images/parallax8.png);
 }
 
-container{width: 100vw;height: 100vh;}
+.container{width: 100vw;height: 100vh;}
+
+.conWrap{width: 100px;margin: 0 auto;background: #fff;}
+
+.skyblue{background: skyblue;}
+.pink{background: pink;}
