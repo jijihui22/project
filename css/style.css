@@ -1,49 +1,425 @@
 @charset "utf-8";
 
-body{height: 400vh;}
-header{width: 100vw; height: 100vh;background: #feae1b;position: relative;overflow: hidden;}
+body{height: 1600vh;background:#CBF0FF;}
+header{width: 100%; height: 100vh;background:#CBF0FF;
+        position: relative;overflow-x: hidden;}
+/*overflow: hidden;*/
+.container{width: 100vw;height: 100vh;background: #CBF0FF;}
 
-.layer{
-    width: 100vw;height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 1000px;
+/*mene*/
+.menu-Area{
     position: absolute;
-    transition: 0.3s;
-    transform-origin: center;
+    top: 30%;
+    right: 1%
 }
-.layer.pic0{
-    background-image: url(../images/parallax0.png);
+.menu{
+    position: relative;
 }
-.layer.pic1{
-    background-image: url(../images/parallax1.png);
-    transform: translateY(50);
+.menu li{
+    position: relative;
+    width: 137px;
+    background: #3e3f46;
+    padding: 7px 15px;
+    z-index: var(--i);
+    transition: 0.5s
 }
-.layer.pic2{
-    background-image: url(../images/parallax2.png);
+.menu li:hover{
+    background: #33a3ee;
+    transform: translateX(-40px)
 }
-.layer.pic3{
-    background-image: url(../images/parallax3.png);
+.menu li::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 20px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(-45deg);
+    transition: 0.5s
+}.menu li:hover::before{
+    background:#1f5378;
 }
-.layer.pic4{
-    background-image: url(../images/parallax4.png);
+.menu li::after{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+    transition: 0.5s
 }
-.layer.pic5{
-    background-image: url(../images/parallax5.png);
+.menu li:hover::after{
+    background:#2982b9;
 }
-.layer.pic6{
-    background-image: url(../images/parallax6.png);
+.menu li a{
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    transition: 0.5s;
+    font-weight: bolder;
+    -webkit-box-reflect:below lpx linear-gradient(
+    transparent,#0008);
+    line-height: 0,07em;
+    outline: none;
+    animation:animate 5s linear infinite
 }
-.layer.pic7{
-    background-image: url(../images/parallax7.png);
-}
-.layer.pic8{
-    background-image: url(../images/parallax8.png);
+.menu li:hover a{
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+                0 0 25px #fff,
+                0 0 50px #fff,
+                0 0 200px #fff;
+    transition: 0.5s;
 }
 
-.container{width: 100vw;height: 100vh;}
+/*scroll & line*/
+.scroll-Area{
+    position: fixed;
+    bottom: 8%;
+    right: 8%;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.5s ease-out;
+    z-index: 100
+}
+.scroll{
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scrollanimate 1.8s ease-out infinite
+}
+@keyframes scrollanimate{
+    0%
+    {
+        height: 10%;
+    }
+    100%{
+        height: 7%;
+    }
+}
+ion-icon {
+    font-size: 50px;
+    color: #fff
+}
+.line1, .line2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    z-index: 100    
+}
+.line1{
+    bottom: 10%;
+}
+.line2{
+    bottom: 8%;
+}
 
-.conWrap{width: 100px;margin: 0 auto;background: #fff;}
+/*herder-img*/
+.header-Area{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+}
+.header-Img1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-Img2{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.header-Img3{
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+}
+.header-Img4{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.header-Img5{
+    position: absolute;
+    top: 50%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+}
+.header-Img6{
+    position: absolute;
+    top: 75%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+}
+.header-Img7{
+    position: absolute;
+    top: 25%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+}
 
-.skyblue{background: skyblue;}
-.pink{background: pink;}
+.header-Area h1{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.header-Area span{
+    position: relative; 
+}
+.header-Area span:before,
+.header-Area span:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-Area span:before{
+    z-index: 10;
+    
+    animation: animateone 1s ease-in-out 
+}
+@keyframes animateone{
+    0%,100%
+    {
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-30px);
+    }
+}
+.header-Area span:after{
+    z-index: 9;
+    
+    animation: animatetwo 1s ease-in-out 
+}
+@keyframes animatetwo{
+    0%,100%
+    {
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-15px);
+    }
+}
+.header-Area h1 span:nth-child(1):before,
+.header-Area h1 span:nth-child(1):after{
+    animation-delay: 0s;
+}
+.header-Area h1 span:nth-child(2):before,
+.header-Area h1 span:nth-child(2):after{
+    animation-delay: 0.1s;
+}
+.header-Area h1 span:nth-child(3):before,
+.header-Area h1 span:nth-child(3):after{
+    animation-delay: 0.2s;
+}
+.header-Area h1 span:nth-child(4):before,
+.header-Area h1 span:nth-child(4):after{
+    animation-delay: 0.3s;
+}
+.header-Area h1 span:nth-child(5):before,
+.header-Area h1 span:nth-child(5):after{
+    animation-delay: 0.4s;
+}
+.header-Area h1 span:nth-child(6):before,
+.header-Area h1 span:nth-child(6):after{
+    animation-delay: 0.5s;
+}
+.header-Area h1 span:nth-child(7):before,
+.header-Area h1 span:nth-child(7):after{
+    animation-delay: 0.6s;   
+}
+.header-Area h1 span:nth-child(8):before,
+.header-Area h1 span:nth-child(8):after{
+    animation-delay: 0.7s;   
+}
+.header-Area h1 span:nth-child(9):before,
+.header-Area h1 span:nth-child(9):after{
+    animation-delay: 0.8s;   
+}
+
+/*introduce*/
+.introduce-Area{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    padding: 80px 70px 0 70px
+}
+.introduce-Text{
+    font-size: 32px;
+    line-height: 50px;
+    padding-bottom: 80px
+}
+.introduce-Privacy {
+    font-size: 22px;
+    line-height: 17px;
+}
+.introduce-Character{
+    position: relative;
+    bottom: 20%;
+    float: right;
+    font-size: 22px;
+}
+
+/*skills*/
+.skills{
+    width: 100%;  
+    height: 100vh;
+}
+.skills-graph{
+    display: flex;
+    justify-content: center;
+    transform:rotate(180deg);
+}
+.graph{
+    width: 40px;
+    height:400px;
+    margin: 0 42px 0 10px;
+}
+@keyframes stack{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 95%; opacity:1;}
+}
+@keyframes stack2{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 80%; opacity:1;}
+}
+@keyframes stack3{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 80%; opacity:1;}
+}
+@keyframes stack4{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 95%; opacity:1;}
+}
+@keyframes stack5{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 80%; opacity:1;}
+}
+@keyframes stack6{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 75%; opacity:1;}
+}
+@keyframes stack7{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 75%; opacity:1;}
+}
+@keyframes stack8{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 75%; opacity:1;}
+}
+@keyframes stack9{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 90%; opacity:1;}
+}
+@keyframes stack10{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 85%; opacity:1;}
+}
+@keyframes stack11{
+    0%{ height: 0; opacity:0;}
+    100%{ height: 90%; opacity:1;}
+}
+.graph span{
+    display:flex;
+    height:40px;
+    line-height:40px;
+    justify-content: center;
+    text-align:center;
+    box-sizing: border-box;
+    color:white;
+    transform:rotate(180deg);
+}
+.graph.stack1 span{
+    background-color:firebrick;
+    height:95%;
+    animation:stack 2s 1;
+}
+.graph.stack2 span{
+    background-color:firebrick;
+    height:80%;
+    animation:stack2 2s 1;
+}
+.graph.stack3 span{
+    background-color:firebrick;
+    height:80%;
+    animation:stack3 2s 1;
+}
+.graph.stack4 span{
+    background-color:firebrick;
+    height:95%;
+    animation:stack3 2s 1;
+}
+.graph.stack5 span{
+    background-color:firebrick;
+    height:80%;
+    animation:stack3 2s 1;
+}
+.graph.stack6 span{
+    background-color:firebrick;
+    height:75%;
+    animation:stack3 2s 1;
+}
+.graph.stack7 span{
+    background-color:firebrick;
+    height:75%;
+    animation:stack3 2s 1;
+}
+.graph.stack8 span{
+    background-color:firebrick;
+    height:75%;
+    animation:stack3 2s 1;
+}
+.graph.stack9 span{
+    background-color:firebrick;
+    height:90%;
+    animation:stack3 2s 1;
+}
+.graph.stack10 span{
+    background-color:firebrick;
+    height:85%;
+    animation:stack3 2s 1;
+}
+.graph.stack11 span{
+    background-color:firebrick;
+    height:90%;
+    animation:stack3 2s 1;
+}
+.skills-Icon{
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+}
+.skills-Icon li{
+    text-align: center
+}
+.skills-Icon img{
+    padding: 0 26px
+}
+.skills-Icon p{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px
+}

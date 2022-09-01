@@ -1,51 +1,261 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
-     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="js/circletype.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>    
+    <script src="js/script.js"></script>
 </head>
+
 <body>
     <header>
-       <div class="layer pic0" date-speed="1">
+        <div class="menu-Area">
+            <ul class="menu">
+                <li style="--i:4"><a href="#">About Me</a></li>
+                <li style="--i:3"><a href="#">Skills</a></li>
+                <li style="--i:2"><a href="#">Project</a></li>
+                <li style="--i:1"><a href="#">Contact</a></li>
+            </ul>
+        </div>
         
-       </div> 
-       <div class="layer pic1" data-speed="1">
+        <div class="lines">
+            <span class="line1"></span>
+            <span class="line2"></span>
+        </div>
         
-       </div>
-       <div class="layer pic2" data-speed="1">
-
-       </div>
-       <div class="layer pic3" data-speed="1">
-
-       </div>
-       <div class="layer pic4" data-speed="1">
-
-       </div>
-       <div class="layer pic5" data-speed="1">
-
-       </div>
-       <div class="layer pic6" data-speed="1">
-
-       </div>
-       <div class="layer pic7" data-speed="1">
-
-       </div>
-       <div class="layer pic8" data-speed="1">
-        
-       </div>
+        <div class="header-Area">
+          <h1>
+              <span data-text="P">P</span>
+              <span data-text="O">O</span>
+              <span data-text="R">R</span>
+              <span data-text="T">T</span>
+              <span data-text="F">F</span>
+              <span data-text="O">O</span>
+              <span data-text="L">L</span>
+              <span data-text="I">I</span>
+              <span data-text="O">O</span>
+          </h1>
+           <ul class="header-Imgs">
+               <li class="header-Img1"><img src="images/Untitled-1.png" alt="" style="width: 210px"></li>
+               <li class="header-Img2"><img src="images/headitem3.png" alt="" style="width: 56px"></li>
+               <li class="header-Img3"><img src="images/headitem4.png" alt="" style="width: 46px"></li>
+               <li class="header-Img4"><img src="images/headitem5.png" alt="" style="width: 43px"></li>
+               <li class="header-Img5"><img src="images/headitem6.png" alt="" style="width: 50px"></li>
+               <li class="header-Img6"><img src="images/headitem7.png" alt="" style="width: 52px"></li>
+               <li class="header-Img7"><img src="images/headitem8.png" alt="" style="width: 60px"></li>
+           </ul>
+        </div>
     </header>
-    <container class="skyblue">
-        <div class="conWrap">1111</div>
+
+<!--introduce-->
+       <div class="container introduce-Area">
+        <div class="introduce-Text">
+            <p>안녕하세요<br>'하고싶은 것을 계획하고 이루는'</p>
+            <p>~한일을 하겠습니다.</p>
+        </div>
+        
+        <span class="introduce-Privacy">
+            <p>address</p>
+            <p>@naver.com</p>
+            <p>address</p>
+        </span>
+        
+        <div class="introduce-img">
+            <img src="#" alt="">
+        </div>
+        
+        <span class="introduce-Character">
+            <p>#쾌활 #긍정 #유쾌 #꾸준한 노력</p>
+        </span>
+    </div>
+
+<!--skills-->
+    <div class="container skills">
+        <ul class="skills-graph">
+                <li class="graph stack1">
+                    <span>95%</span>    
+                </li>
+                <li class="graph stack2">
+                    <span>80%</span>    
+                </li>
+                <li class="graph stack3">
+                    <span>80%</span>    
+                </li>
+                <li class="graph stack4">
+                    <span>95%</span>    
+                </li>
+                <li class="graph stack5">
+                    <span>80%</span>    
+                </li>
+                <li class="graph stack6">
+                    <span>75%</span>    
+                </li>
+                <li class="graph stack7">
+                    <span>75%</span>    
+                </li>
+                <li class="graph stack8">
+                    <span>75%</span>    
+                </li>
+                <li class="graph stack9">
+                    <span>90%</span>    
+                </li>
+                <li class="graph stack10">
+                    <span>85%</span>    
+                </li>
+                <li class="graph stack11">
+                    <span>90%</span>    
+                </li>
+            </ul>
+  
+        <ul class="skills-Icon">
+            <li>
+                <img src="images/icon/html.png" alt="" style="height: 40px">
+                <p>HTML</p>
+            </li>
+            <li>
+                <img src="images/icon/css.png" alt="" style="height: 40px">
+                <p>CSS</p>
+            </li>
+            <li>
+                <img src="images/icon/script.png" alt="" style="height: 40px">
+                <p>JAVASCRIPT</p>
+            </li>
+            <li>
+                <img src="images/icon/jquery.png" alt="" style="height: 40px">
+                <p>JQUERY</p>
+            </li>
+            <li>    
+                <img src="images/icon/REACT.png" alt="" style="height: 40px">
+                <p>REACT</p>
+            </li>
+            <li>
+                <img src="images/icon/ps.png" alt="" style="height: 40px">
+                <p>포토샵</p>
+            </li>
+            <li>
+                <img src="images/icon/ai.png" alt="" style="height: 40px">
+                <p>일러스트</p>
+            </li>
+            <li>
+                <img src="images/icon/figma.png" alt="" style="height: 40px">
+                <p>FIGMA</p>
+            </li>
+            <li>
+                <img src="images/icon/pp.png" alt="" style="height: 40px">
+                <p>POWERPOINT</p>
+            </li>
+            <li>
+                <img src="images/icon/ex.png" alt="" style="height: 40px">
+                <p>EXCEL</p>
+            </li>
+            <li>
+                <img src="images/icon/word.png" alt="" style="height: 40px">
+                <p>WORD</p>
+            </li>
+        </ul>
+    </div>
+    <container class="5page pink">
+
     </container>
-    <container class="pink">
+    <container class="6page pink">
 
-    </container>    
+    </container>
+    <container class="7page pink">
 
-    <script src="js/script.js"></script>
+    </container>
+    <container class="8page pink">
+
+    </container>
+    <container class="9page pink">
+
+    </container>
+    <container class="10page pink">
+
+    </container>
+    <container class="11page pink">
+
+    </container>
+    <container class="12page pink">
+
+    </container>
+    <container class="13page pink">
+
+    </container>
+    <container class="14page pink">
+
+    </container>
+    <container class="15page pink">
+
+    </container>
+    <container class="16page pink">
+
+    </container>
+    <container class="17page pink">
+
+    </container>
+    <container class="18page pink">
+
+    </container>
+    <container class="19page pink">
+
+    </container>
+    <container class="20page pink">
+
+    </container>
+    <container class="21page pink">
+
+    </container>
+    <container class="22page pink">
+
+    </container>
+
+   
+    <!--    scroll & line-->
+    <section class="scroll-Area">
+        <span id="scroll">
+            SCROLL TO EXPLORE ＊ ＊ ＊ 
+        </span>
+    </section>
+    <section class="arrow">
+        <ion-icon name="arrow-down"></ion-icon>
+    </section>
+    <!--    scroll & line-->
+    
+    
+    <script>
+        <!--    scroll & line-->
+        const circleType = new CircleType(
+            document.getElementById("scroll")).radius(50);
+        $(window).scroll(function(){
+            let offset = $(window).scrollTop();
+            offset = offset * 0.3;
+            
+            $(".scroll-Area").css({
+                "-moz-transform" : "rotate(" + offset + "deg)",
+                "-webkit-transform" : "rotate(" + offset + "deg)",
+                "-o-transform" : "rotate(" + offset + "deg)",
+                "-ms-transform" : "rotate(" + offset + "deg)",
+                "transform" : "rotate(" + offset + "deg)"
+            });    
+        });
+        <!--    scroll & line-->
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
 </body>
+
 </html>
