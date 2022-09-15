@@ -496,16 +496,17 @@ ion-icon {
     z-index: 100;
     position: absolute;
     right: 0%;
-    top: 7%;
-    border: 1px solid #6c6c6c;
-    padding: 10px 44px;
-    background-color: white;
+    top: 2%;
+    border: 2px solid rgb(211, 211, 211);
+    padding: 17px 55px;
+    background-color: rgb(255, 255, 255);
     color: #5d5b5b;
     font-weight: 600;
 }
 .bye {
     font-family: 'Nanum Myeongjo', serif;
     background-color: blanchedalmond;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
