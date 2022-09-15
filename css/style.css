@@ -503,3 +503,13 @@ ion-icon {
     color: #5d5b5b;
     font-weight: 600;
 }
+.bye {
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: #F6FDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #2e3133
+}
