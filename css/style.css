@@ -1,12 +1,14 @@
 @charset "utf-8";
 
-body{height: 1600vh;background:#CBF0FF;}
+html{scroll-behavior: smooth;}
+body{height: 900vh;}
 header{width: 100%; height: 100vh;background:#CBF0FF;
         position: relative;overflow-x: hidden;}
 /*overflow: hidden;*/
-.container{width: 100vw;height: 100vh;background: #CBF0FF;}
+.container{width: 100vw;height: 100vh;background: #e7f8ff;}
 
-/*mene*/
+
+/*----------------------mene----------------------*/
 .menu-Area{
     position: absolute;
     top: 30%;
@@ -78,8 +80,8 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     transition: 0.5s;
 }
 
-/*scroll & line*/
-.scroll-Area{
+/*----------------------scroll & line----------------------*/
+.scrollWrap{
     position: fixed;
     bottom: 8%;
     right: 8%;
@@ -87,10 +89,24 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     font-size: 1.1em;
     font-weight: bold;
     transition: 0.5s ease-out;
-    z-index: 100
+    z-index: 100;
 }
 .scroll{
     position: relative;
+}
+.scrollWrap::after{
+    content: "TOP";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.scrollWrap:hover::after{
+    color: #444;
 }
 .arrow{
     position: absolute;
@@ -128,7 +144,7 @@ ion-icon {
     bottom: 8%;
 }
 
-/*herder-img*/
+/*----------------------herder-img----------------------*/
 .header-Area{
     position: relative;
     width: 100%;
@@ -197,29 +213,29 @@ ion-icon {
 .header-Area span:before{
     z-index: 10;
     
-    animation: animateone 1s ease-in-out 
+    animation: logoanione 1.1s ease-in-out infinite
 }
-@keyframes animateone{
+@keyframes logoanione{
     0%,100%
     {
         transform: translate(0,0);
     }
     50%{
-        transform: translate(0,-30px);
+        transform: translate(0,-32px);
     }
 }
 .header-Area span:after{
     z-index: 9;
     
-    animation: animatetwo 1s ease-in-out 
+    animation: logoanitwo 1.1s ease-in-out infinite
 }
-@keyframes animatetwo{
+@keyframes logoanitwo{
     0%,100%
     {
-        transform: translate(0,0);
+        transform: translate(0,0);opacity: 75%
     }
     50%{
-        transform: translate(0,-15px);
+        transform: translate(0,-12px);
     }
 }
 .header-Area h1 span:nth-child(1):before,
@@ -259,13 +275,14 @@ ion-icon {
     animation-delay: 0.8s;   
 }
 
-/*introduce*/
+/*----------------------introduce----------------------*/
 .introduce-Area{
     width: 100%;
     height: 100vh;
     position: relative;
     font-family: 'Jua', sans-serif;
-    padding: 80px 70px 0 70px
+    padding: 160px 140px 0 140px;
+    color: #2e3133;
 }
 .introduce-Text{
     font-size: 32px;
@@ -274,13 +291,12 @@ ion-icon {
 }
 .introduce-Privacy {
     font-size: 22px;
-    line-height: 17px;
 }
 .introduce-Character{
     position: relative;
-    bottom: 20%;
+    bottom: 25%;
     float: right;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 /*skills*/
@@ -294,11 +310,11 @@ ion-icon {
     transform:rotate(180deg);
 }
 .graph{
-    width: 40px;
-    height:400px;
-    margin: 0 42px 0 10px;
+    width: 26px;
+    height: 400px;   
+    margin: 15px 33px;
 }
-@keyframes stack{
+@keyframes stack1{
     0%{ height: 0; opacity:0;}
     100%{ height: 95%; opacity:1;}
 }
@@ -349,63 +365,65 @@ ion-icon {
     justify-content: center;
     text-align:center;
     box-sizing: border-box;
-    color:white;
+    font-size: 13px;
+    color: #3e3f46;
+    font-weight: 500;
     transform:rotate(180deg);
 }
 .graph.stack1 span{
-    background-color:firebrick;
+    background-color:white;
     height:95%;
-    animation:stack 2s 1;
+    animation:stack1 2s 1;
 }
 .graph.stack2 span{
-    background-color:firebrick;
+    background-color:white;
     height:80%;
     animation:stack2 2s 1;
 }
 .graph.stack3 span{
-    background-color:firebrick;
+    background-color:white;
     height:80%;
     animation:stack3 2s 1;
 }
 .graph.stack4 span{
-    background-color:firebrick;
+    background-color:white;
     height:95%;
-    animation:stack3 2s 1;
+    animation:stack4 2s 1;
 }
 .graph.stack5 span{
-    background-color:firebrick;
+    background-color:white;
     height:80%;
-    animation:stack3 2s 1;
+    animation:stack5 2s 1;
 }
 .graph.stack6 span{
-    background-color:firebrick;
+    background-color:white;
     height:75%;
-    animation:stack3 2s 1;
+    animation:stack6 2s 1;
 }
 .graph.stack7 span{
-    background-color:firebrick;
+    background-color:white;
     height:75%;
-    animation:stack3 2s 1;
+    animation:stack7 2s 1;
 }
 .graph.stack8 span{
-    background-color:firebrick;
+    background-color:white;
     height:75%;
-    animation:stack3 2s 1;
+    animation:stack8 2s 1;
 }
 .graph.stack9 span{
-    background-color:firebrick;
+    background-color:white;
     height:90%;
-    animation:stack3 2s 1;
+    animation:stack9 2s 1;
 }
 .graph.stack10 span{
-    background-color:firebrick;
+    background-color:white;
     height:85%;
-    animation:stack3 2s 1;
+    animation:stack10 2s 1;
 }
 .graph.stack11 span{
-    background-color:firebrick;
+    background-color:white;
     height:90%;
-    animation:stack3 2s 1;
+    animation:stack11 2s 1;
 }
 .skills-Icon{
     display: flex;
@@ -422,4 +440,66 @@ ion-icon {
     font-size: 14px;
     font-weight: bold;
     padding-top: 5px
+}
+
+/*----------------------sections/*----------------------*/
+.section-area img{height: 100%}
+.section-area{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden
+}
+.list1{
+    width: 33.4%;
+    height: 38.2vh;
+    background-color: snow;
+}
+.list2{
+    width: 66.6%;
+    height: 100vh;
+    background-color: palegreen;
+}
+.list3{
+    width: 33.4%;
+    height: 61.8vh;
+    background-color: chocolate;
+    position: absolute;
+    bottom: 0;
+}
+.animate, .growimg{
+    animation: fadeIn 1s forwards ease-in;
+    transition: 2s ease-in-out;
+}
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.list1 img{
+    opacity: 0;
+    transform: translateX(-10em)
+    
+}
+.list1 img.animate{
+    left: 0;
+    transform: translateX(0em)
+}
+.lis img{
+    width: 0;
+    height: 0;
+}
+.lis img.animate{
+    width: 1199px;
+    height: 1078px;
+}
+.portfolioWrap a{
+    z-index: 100;
+    position: absolute;
+    right: 0%;
+    top: 7%;
+    border: 1px solid #6c6c6c;
+    padding: 10px 44px;
+    background-color: white;
+    color: #5d5b5b;
+    font-weight: 600;
 }
