@@ -9,6 +9,7 @@ $(function(){
     let $tourOst = $('.tour').offset().top - $offset;
     let $numberGameOst = $('.numberGame').offset().top - $offset;
     let $mountOst = $('.mount').offset().top - $offset;
+    let $louisvuittonOst = $('.louisvuitton').offset().top - $offset;
         
     $(window).scroll(function(){
         if($(this).scrollTop() > $shopOst){
@@ -23,12 +24,17 @@ $(function(){
         }
         if($(this).scrollTop() > $tourOst){
             $('.tour').find('img').addClass('animate');
+        }        if($(this).scrollTop() > $mountOst){
+            $('.mount').find('img').addClass('animate');
         }
         if($(this).scrollTop() > $numberGameOst){
             $('.numberGame').find('img').addClass('animate');
         }
         if($(this).scrollTop() > $mountOst){
             $('.mount').find('img').addClass('animate');
+        }
+        if($(this).scrollTop() > $louisvuittonOst){
+            $('.louisvuitton').find('img').addClass('animate');
         }
     })
 })
