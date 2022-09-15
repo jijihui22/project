@@ -90,6 +90,7 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     font-weight: bold;
     transition: 0.5s ease-out;
     z-index: 100;
+    text-shadow:  1px 1px 2px #777; ;
 }
 .scroll{
     position: relative;
@@ -497,9 +498,9 @@ ion-icon {
     position: absolute;
     right: 0%;
     top: 2%;
-    border: 2px solid rgb(211, 211, 211);
-    padding: 17px 55px;
-    background-color: rgb(255, 255, 255);
+    border: 1px solid #6c6c6c;
+    padding: 18px 62px;
+    background-color: white;
     color: #5d5b5b;
     font-weight: 600;
 }
