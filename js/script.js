@@ -2,7 +2,7 @@
 $(function(){
     
     let $shopWrap = $('.shop');
-    let $offset = 400;
+    let $offset = 500;
     let $shopOst = $shopWrap.offset().top - $offset;
     let $todoOst = $('.todo').offset().top - $offset;
     let $timesOst = $('.times').offset().top - $offset;
