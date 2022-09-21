@@ -36,11 +36,7 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     right: -20px;
     width: 20px;
     height: 100%;
-<<<<<<< HEAD
-    background: #d8d7d5;
-=======
     background: #d4d4d4;
->>>>>>> 8663e6105e59423712f56974d926684404509373
     transform-origin: right;
     transform: skewY(-45deg);
     transition: 0.5s
@@ -54,11 +50,7 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     left: 0px;
     width: 100%;
     height: 20px;
-<<<<<<< HEAD
-    background: #eae8e3;
-=======
     background: #ededed;
->>>>>>> 8663e6105e59423712f56974d926684404509373
     transform-origin: bottom;
     transform: skewX(-45deg);
     transition: 0.5s
@@ -508,13 +500,8 @@ ion-icon {
     top: 2%;
     border: 1px solid #777;
     padding: 18px 62px;
-<<<<<<< HEAD
-    background-color: white;
-    color: #777;
-=======
-    background-color: #777;
+    background-color: #fff;
     color: #5d5b5b;
->>>>>>> 8663e6105e59423712f56974d926684404509373
     font-weight: 600;
 }
 
@@ -547,6 +534,9 @@ ion-icon {
 .contact-Box.contactBox{
     right: 0;
 }
+.contact-Box li IMG{
+    border-radius: 1PX
+}
 .contactBox, fadeIn{
     transition: 2.4s ease-in-out;
     animation: fadeIn 1s forwards ease-in;
@@ -562,4 +552,7 @@ ion-icon {
     font-family: 'Kanit', sans-serif;
     font-size: 1.6em;
     margin-right: 16px;
+}
+.contact-Box li img{
+    border-radius: 12px
 }
