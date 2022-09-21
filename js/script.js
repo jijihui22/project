@@ -1,4 +1,3 @@
-
 $(function(){
     
     let $shopWrap = $('.shop');
@@ -10,6 +9,7 @@ $(function(){
     let $numberGameOst = $('.numberGame').offset().top - $offset;
     let $mountOst = $('.mount').offset().top - $offset;
     let $louisvuittonOst = $('.louisvuitton').offset().top - $offset;
+    let $byeOst = $('.bye').offset().top - $offset;
         
     $(window).scroll(function(){
         if($(this).scrollTop() > $shopOst){
@@ -24,7 +24,8 @@ $(function(){
         }
         if($(this).scrollTop() > $tourOst){
             $('.tour').find('img').addClass('animate');
-        }        if($(this).scrollTop() > $mountOst){
+        }        
+        if($(this).scrollTop() > $mountOst){
             $('.mount').find('img').addClass('animate');
         }
         if($(this).scrollTop() > $numberGameOst){
@@ -35,6 +36,9 @@ $(function(){
         }
         if($(this).scrollTop() > $louisvuittonOst){
             $('.louisvuitton').find('img').addClass('animate');
+        }
+        if($(this).scrollTop() > $byeOst){
+            $('.bye').find('.contact-Box').addClass('contactBox');
         }
     })
 })

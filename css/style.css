@@ -20,13 +20,13 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
 .menu li{
     position: relative;
     width: 137px;
-    background: #3e3f46;
+    background: #F9F9F9;
     padding: 7px 15px;
     z-index: var(--i);
     transition: 0.5s
 }
 .menu li:hover{
-    background: #33a3ee;
+    background: #b5b5b5;
     transform: translateX(-40px)
 }
 .menu li::before{
@@ -36,12 +36,12 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     right: -20px;
     width: 20px;
     height: 100%;
-    background: #2e3133;
+    background: #d8d7d5;
     transform-origin: right;
     transform: skewY(-45deg);
     transition: 0.5s
 }.menu li:hover::before{
-    background:#1f5378;
+    background:#838383;
 }
 .menu li::after{
     content: '';
@@ -50,16 +50,16 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     left: 0px;
     width: 100%;
     height: 20px;
-    background: #35383e;
+    background: #eae8e3;
     transform-origin: bottom;
     transform: skewX(-45deg);
     transition: 0.5s
 }
 .menu li:hover::after{
-    background:#2982b9;
+    background:#afafaf;
 }
 .menu li a{
-    color: #999;
+    color: #848484;
     display: block;
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -90,7 +90,6 @@ header{width: 100%; height: 100vh;background:#CBF0FF;
     font-weight: bold;
     transition: 0.5s ease-out;
     z-index: 100;
-    text-shadow:  1px 1px 2px #777; ;
 }
 .scroll{
     position: relative;
@@ -212,9 +211,8 @@ ion-icon {
     left: 0;
 }
 .header-Area span:before{
-    z-index: 10;
-    
-    animation: logoanione 1.1s ease-in-out infinite
+    z-index: 10;    
+    animation: logoanione 1.1s ease-in-out infinite;
 }
 @keyframes logoanione{
     0%,100%
@@ -284,11 +282,12 @@ ion-icon {
     font-family: 'Jua', sans-serif;
     padding: 160px 140px 0 140px;
     color: #2e3133;
+    background: #e7f8ff;
 }
 .introduce-Text{
     font-size: 32px;
     line-height: 50px;
-    padding-bottom: 80px
+    padding-bottom: 80px;
 }
 .introduce-Privacy {
     font-size: 22px;
@@ -432,7 +431,7 @@ ion-icon {
     padding: 0 40px;
 }
 .skills-Icon li{
-    text-align: center
+    text-align: center;
 }
 .skills-Icon img{
     padding: 0 26px
@@ -440,7 +439,7 @@ ion-icon {
 .skills-Icon p{
     font-size: 14px;
     font-weight: bold;
-    padding-top: 5px
+    padding-top: 5px;
 }
 
 /*----------------------sections/*----------------------*/
@@ -449,7 +448,7 @@ ion-icon {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
 .list1{
     width: 33.4%;
@@ -498,20 +497,55 @@ ion-icon {
     position: absolute;
     right: 0%;
     top: 2%;
-    border: 1px solid #6c6c6c;
+    border: 1px solid #777;
     padding: 18px 62px;
     background-color: white;
-    color: #5d5b5b;
+    color: #777;
     font-weight: 600;
 }
-.bye {
+
+/*---------------------- bye /*----------------------*/
+.bye{
+    position: relative;
+    color: #2e3133;
+}
+.bye-Thank{
     font-family: 'Nanum Myeongjo', serif;
     background-color: blanchedalmond;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
-    color: #2e3133
+    color: #2e3133;
+}
+.contact-Box{
+    background-color: #fff;
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    top: 50%;
+    right: -350px;
+    transform: translateY(-50%);
+    padding: 1em;
+}
+.contact-Box.contactBox{
+    right: 0;
+}
+.contactBox, fadeIn{
+    transition: 2.4s ease-in-out;
+    animation: fadeIn 1s forwards ease-in;
+}
+.contact-Box li{
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33.3%; 
+}
+.contact-Box li p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.6em;
+    margin-right: 16px;
 }
